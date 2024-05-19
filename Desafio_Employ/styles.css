@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header-buttons .botao {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+.header-buttons .botao.primario {
+    background-color: #28a745;
+}
+
+.heroi {
+    background-color: #e9ecef;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.heroi h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.precos {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.plano {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 22%; /* Ajuste a largura dos contêineres dos planos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plano .preco {
+    font-size: 1.5em;
+}
+
+.plano ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plano ul li {
+    margin: 10px 0;
+}
+
+.plano .botao {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Estilos específicos para cada plano */
+.gratuito .preco {
+    color: #000;
+}
+
+.gratuito .botao {
+    background-color: #007bff;
+}
+
+.plus-titulo {
+    color: #1EA358;
+}
+
+.pro-titulo {
+    color: #007bff;
+}
+
+.avancado-titulo {
+    color: #6f42c1;
+}
+
+.botao-plus {
+    background-color: #1EA358;
+}
+
+.botao-pro {
+    background-color: #007bff;
+}
+
+.botao-avancado {
+    background-color: #6f42c1;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+    .planos-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .plano {
+        width: 45%; /* Ajuste a largura dos contêineres dos planos para telas menores */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .plano {
+        width: 100%;
+    }
+}
